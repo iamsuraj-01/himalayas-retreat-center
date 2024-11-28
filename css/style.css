@@ -8448,7 +8448,8 @@ h1, h2, h3, h4, h5,
             text-align: center; } }
         .owl-carousel.home-slider .slider-item .slider-text .subheading {
           color: #000;
-          font-weight: 700; }
+          font-weight: 700;
+        }
         .owl-carousel.home-slider .slider-item .slider-text .text {
           position: relative; }
         .owl-carousel.home-slider .slider-item .slider-text h1 {
@@ -9120,7 +9121,13 @@ textarea.form-control {
 
 .ftco-animate {
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+}
+
+.caro-fade {
+  background-color: rgba(0, 0, 0, 0.2); /* Dark overlay with 50% opacity */
+  border-radius: 10px;
+}
 
 .bg-primary {
   background: #ffb5b5 !important; }
