@@ -221,7 +221,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button; }
+  appearance: button; }
 
 button:not(:disabled),
 [type="button"]:not(:disabled),
@@ -246,7 +246,7 @@ input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
-  -webkit-appearance: listbox; }
+  appearance: listbox; }
 
 textarea {
   overflow: auto;
@@ -278,7 +278,7 @@ progress {
 
 [type="search"] {
   outline-offset: -2px;
-  -webkit-appearance: none; }
+  appearance: none; }
 
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
@@ -9270,7 +9270,7 @@ textarea.form-control {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -9840,3 +9840,65 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+/* ------------ Custom CSS ---------------------- */
+
+/* Custom styling for package-deal class */
+.package-deal {
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Ensures the image doesn't overflow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  position: relative; /* To position the price tag correctly */
+}
+
+.package-deal:hover {
+  transform: translateY(-10px); /* Slight upward movement on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+.package-deal .price-tag {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #28a745; /* Green background */
+  color: #fff;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.package-deal .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.package-deal .text {
+  padding: 20px; /* Padding inside the content area */
+  font-family: 'Arial', sans-serif; /* Font for text */
+}
+
+.package-deal h3 {
+  font-size: 1.5rem;
+  color: #2e7d32; /* Green color for the title */
+}
+
+.package-deal .package-info p {
+  font-size: 0.9rem;
+  color: #555; /* Dark gray color for regular text */
+  display: flex;
+  justify-content: space-between; /* Ensures label and value are aligned */
+  margin-bottom: 10px;
+}
+
+.package-deal .package-info p strong {
+  color: #333; /* Darker color for the strong text */
+}
+
+.package-deal .package-info p + p {
+  margin-top: 10px; /* Adds space between paragraphs */
+}
