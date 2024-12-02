@@ -9855,6 +9855,33 @@ hr {
   width: 80px;
   height: 2px;
 }
+
+/* Whatsapp Button */
+.whatsapp-popup {
+  position: fixed;
+  right: 22px;
+  bottom: 30px;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: 0.5s;
+}
+.whatsapp-popup a {
+  font-size: 30px;
+  line-height: 60px;
+}
+.whatsapp-popup:hover {
+  background-color: #1ebe57;
+}
+
+/* Forms */
+.form-control:focus {
+  box-shadow: none;
+}
+
 #fee-detail .card .circle-icon {
   width: 60px;
   height: 60px;
