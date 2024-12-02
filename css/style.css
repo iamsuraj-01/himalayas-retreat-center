@@ -9845,6 +9845,18 @@ textarea.form-control {
 
 /* ------------ Custom CSS ---------------------- */
 
+.bg-theme {
+  background-color: #4CAF50;
+}
+.text-theme {
+  color: #4CAF50;
+}
+hr {
+  background-color: #4CAF50!important;
+  width: 80px;
+  height: 2px;
+}
+
 /* Custom styling for package-deal class */
 .package-deal {
   background-color: #fff; /* White background */
