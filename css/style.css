@@ -9856,6 +9856,16 @@ hr {
   width: 80px;
   height: 2px;
 }
+#fee-detail .card .circle-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 
 /* Custom styling for package-deal class */
 .package-deal {
