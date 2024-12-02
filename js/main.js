@@ -331,7 +331,7 @@
             const mailMessage = messageLines.join('%0D%0A'); // '%0D%0A' is the URL-encoded line break for mailto links
 
             // Construct mailto link
-            const mailtoLink = `mailto:vikashnawani999@gmail.com?subject=Registration Request from ${fullName}&body=${mailMessage}`;
+            const mailtoLink = `mailto:Himalayassoulretreat@gmail.com?subject=Registration Request from ${fullName}&body=${mailMessage}`;
 
             // Open the user's default email client
             window.location.href = mailtoLink;
