@@ -8348,10 +8348,19 @@ h1, h2, h3, h4, h5,
       color: #2c396b;
       margin-top: 0; }
 
-.navbar-brand {
-  font-weight: 400;
-  font-size: 40px;
-  font-family: "EB Garamond", serif; }
+  .navbar-brand {
+    font-weight: 400;
+    font-family: "EB Garamond", serif; }
+  @media (min-width: 992px) {
+    .navbar-brand {
+      font-size: 40px;
+    }
+  }
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 30px;
+    }
+  }
 
 .owl-carousel {
   position: relative; }
@@ -8845,8 +8854,8 @@ h1, h2, h3, h4, h5,
 .services-2 {
   margin-bottom: 30px; }
   .services-2 .icon {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border: 1px solid #4CAF50;
     background: #4CAF50;
     margin: 0;
@@ -8855,7 +8864,7 @@ h1, h2, h3, h4, h5,
     -ms-border-radius: 50%;
     border-radius: 50%; }
     .services-2 .icon span {
-      font-size: 30px;
+      font-size: 25px;
       color: #fff; }
   .services-2 .text {
     width: calc(100% - 60px); }
