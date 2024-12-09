@@ -8866,6 +8866,8 @@ h1, h2, h3, h4, h5,
     .services-2 .icon span {
       font-size: 25px;
       color: #fff; }
+      .services-2 h3 {
+        font-size: 25px; }
   .services-2 .text {
     width: calc(100% - 60px); }
 
