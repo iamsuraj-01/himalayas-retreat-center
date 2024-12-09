@@ -299,47 +299,50 @@
     });
 
 	// Registration Form Submission
-    $(document).ready(function() {
-        $("#registrationForm").on("submit", function(event) {
-            event.preventDefault(); // Prevent the default form submission
+	$(document).ready(function () {
+		$("#registrationForm").on("submit", function (event) {
+			event.preventDefault(); // Prevent the default form submission
 
-            const fullName = $("input[name='fullName']").val();
-            const gender = $("select[name='gender']").val();
-            const contactNo = $("input[name='contactNo']").val();
-            const email = $("input[name='email']").val();
-            const country = $("input[name='country']").val();
-            const dob = $("input[name='dob']").val();
-            const courseProgram = $("select[name='courseProgram']").val();
-            const accommodation = $("select[name='accommodation']").val();
-            const message = $("textarea[name='message']").val();
+			const fullName = $("input[name='fullName']").val();
+			const gender = $("select[name='gender']").val();
+			const contactNo = $("input[name='contactNo']").val();
+			const email = $("input[name='email']").val();
+			const country = $("input[name='country']").val();
+			const dob = $("input[name='dob']").val();
+			const courseProgram = $("select[name='courseProgram']").val();
+			const accommodation = $("select[name='accommodation']").val();
+			const message = $("textarea[name='message']").val();
 
-            // Create an array for the message lines
-            const messageLines = [
-                `Registration Information:`,
-                `Full Name: ${fullName}`,
-                `Gender: ${gender}`,
-                `Contact No: ${contactNo}`,
-                `Email: ${email}`,
-                `Country: ${country}`,
-                `Date of Birth: ${dob}`,
-                `Course Program: ${courseProgram}`,
-                `Accommodation: ${accommodation}`,
-                `Message: ${message}`
-            ];
+			// Create an array for the message lines
+			const messageLines = [
+				`Registration Information:`,
+				`Full Name: ${fullName}`,
+				`Gender: ${gender}`,
+				`Contact No: ${contactNo}`,
+				`Email: ${email}`,
+				`Country: ${country}`,
+				`Date of Birth: ${dob}`,
+				`Course Program: ${courseProgram}`,
+				`Accommodation: ${accommodation}`,
+				`Message: ${message}`
+			];
 
-            // Join the message lines with line breaks
-            const mailMessage = messageLines.join('%0D%0A'); // '%0D%0A' is the URL-encoded line break for mailto links
+			// Join the message lines with line breaks
+			const whatsappMessage = messageLines.join('\n');
 
-            // Construct mailto link
-            const mailtoLink = `mailto:Himalayassoulretreat@gmail.com?subject=Registration Request from ${fullName}&body=${mailMessage}`;
+			// Detect if the user is on mobile or desktop
+			const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+			const whatsappUrl = isMobile
+				? `https://wa.me/9759553817?text=${encodeURIComponent(whatsappMessage)}` // Mobile link
+				: `https://web.whatsapp.com/send?phone=9759553817&text=${encodeURIComponent(whatsappMessage)}`; // WhatsApp Web link
 
-            // Open the user's default email client
-            window.location.href = mailtoLink;
+			// Open WhatsApp link
+			window.open(whatsappUrl, '_blank');
 
-            // Show Thank You Modal
-            $("#thankYouModal").modal('show');
-        });
-    });
+			// Show Thank You Modal
+			$("#thankYouModal").modal('show');
+		});
+	});
 
 
 })(jQuery);
