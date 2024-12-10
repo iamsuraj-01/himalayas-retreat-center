@@ -8779,8 +8779,8 @@ h1, h2, h3, h4, h5,
     border-radius: 50%; }
     @media (max-width: 991.98px) {
       .offer-deal .img {
-        width: 150px;
-        height: 150px; } }
+        width: 200px;
+        height: 200px; } }
   .offer-deal .text h3 {
     font-size: 30px; }
 
@@ -9341,16 +9341,16 @@ textarea.form-control {
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
-      color: #4CAF50; }
+      color: #fff; }
   .ftco-counter .text strong.number {
     font-weight: 400;
     font-size: 50px;
-    color: #4CAF50;
+    color: #fff;
     font-family: "EB Garamond", serif; }
   .ftco-counter .text span {
     font-weight: 400;
     font-size: 18px;
-    color: #4CAF50;
+    color: #fff;
     font-family: "EB Garamond", serif; }
   .ftco-counter .text:hover .icon span, .ftco-counter .text:focus .icon span {
     color: #000; }
