@@ -9960,3 +9960,8 @@ hr {
 .package-deal .package-info p + p {
   margin-top: 10px; /* Adds space between paragraphs */
 }
+
+.retreat-page .col-lg-12 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
