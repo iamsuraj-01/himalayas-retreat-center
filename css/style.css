@@ -8173,7 +8173,7 @@ h1, h2, h3, h4, h5,
   padding: 0; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: #000 !important;
+      background: #fff !important;
       position: relative;
       top: 0;
       padding: 10px 15px; } }
@@ -8281,7 +8281,7 @@ h1, h2, h3, h4, h5,
     color: #4CAF50; }
   .ftco-navbar-light .navbar-toggler {
     border: none;
-    color:  #fff!important;
+    color:  #000!important;
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
