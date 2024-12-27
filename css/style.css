@@ -9985,3 +9985,27 @@ hr {
     height: auto;
   }
 }
+
+/* Remove the below code to make navbar fixed */
+.ftco_navbar.scrolled,
+.ftco_navbar.awake {
+    position: static; /* Change to static to prevent fixed behavior */
+    background: transparent; /* Optional: Remove background changes if unwanted */
+    box-shadow: none; /* Optional: Remove shadow effects if unwanted */
+}
+
+/* Footer */
+.ftco-footer-widget .navbar-brand img {
+  width: 100px;
+  height: auto;
+  max-width: 100%;
+  pointer-events: none; /* Prevents clicking to protect logo from being downloaded */
+}
+/* Smartphones and Tablets */
+@media (max-width: 991.98px) {
+  .ftco-footer-widget .navbar-brand img {
+    width: 90px;
+    max-width: 100%;
+    height: auto;
+  }
+}
